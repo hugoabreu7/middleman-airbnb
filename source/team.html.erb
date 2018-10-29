@@ -1,0 +1,9 @@
+<ul class="list-inline text-center">
+  <% data.team.each do |student|%>
+    <li>
+      <img src ="/images/<%=student.name%>.jpg" class="img-circle avatar-size">
+      <p><%= student.name %></p>
+      <p><%= student.gh_username %></p>
+    </li>
+  <% end %>
+</ul>
