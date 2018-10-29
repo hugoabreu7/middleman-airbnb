@@ -11,13 +11,12 @@ title: Le Wagon - Middleman
 <div class="container">
     <div class="cards">
     <% data.users.each do |element| %>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(/images/<%=element.city%>.jpg);"
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(/images/<%=element.city%>.jpg);">
         <div class="card-description">
           <h2><%=element.name%></h2>
           <p><%=element.city%></p>
         </div>
-        <div class="card-user" style="background-image: url(/images/<%=element.name%>.jpg);"
-        <a class="card-link" href="#" ></a>
+        <img src ="/images/<%=element.name%>.jpg" class="img-circle card-user">
       </div>
       <% end %>
     </div>
